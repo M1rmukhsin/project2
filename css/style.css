@@ -1,0 +1,324 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-size: 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #000;
+    color: #fff;
+    width: auto;
+}
+
+
+
+
+header{
+    background-color: #000;
+    border-bottom: aqua solid 2px;
+    background-image: url(../img/stars.jpg);
+    background-repeat: no-repeat;
+}
+
+.navbar{
+    position: fixed;
+    margin-top: 0%;
+}
+
+.navbar nav {
+    display: flex;
+    gap: 2em;
+    margin-left: auto;
+    margin-right: 3%;
+}
+.first-letter {
+    color: aqua;
+}
+
+.name {
+    color: white;
+    text-decoration: none;
+    margin-left: 2%;
+}
+
+.navbar nav a {
+    color: aqua;
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: all 0.5s ease-out;
+}
+
+.navbar {
+    background-color: #000;
+    top: 0%;
+    text-align: center;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    z-index: 1;
+}
+
+nav a:hover,
+nav a:focus {
+    box-shadow: 10px 5px 5px aqua;
+}
+
+
+.header-text {
+    padding: 80px 10px;
+    margin: 50px 100px;
+    width: auto;
+    height: 400px;
+}
+
+.header-text span a img {
+    width: 40px;
+    height: auto;
+    background-color: aliceblue;
+    border-radius: 30%;
+    margin-left: 5px;
+    transition: all 0.5s ease-in;
+}
+
+.header-text span a img:hover,
+.header-text span a img:focus {
+    width: 50px;
+    height: auto;
+    box-shadow: 5px 5px 5px azure;
+}
+
+#about {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.about-container {
+    display: flex;
+}
+
+#about h2 {
+    text-align: center;
+}
+
+#skills h2 {
+    text-align: center;
+}
+
+#about .photo {
+    flex: 1;
+}
+
+#about img{
+    height: 30em;
+    width: 25em;
+    margin-left: 9em;
+    transition: all 0.5s ease-out;
+}
+
+#about .text-about {
+    flex: 2;
+}
+
+.text-about a {
+    background-color: aqua;
+    color: #000;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.5s ease-out;
+}
+
+.text-about a:hover{
+    background-color: #000;
+    color: aqua;
+    box-shadow: 10px 5px 5px aqua;
+}
+
+#about img:hover,
+#about img:focus {
+    box-shadow: 10px 5px 5px aqua;
+}
+
+#skills {
+    border-top: aqua solid 2px;
+    border-bottom: aqua solid 2px;
+}
+
+.container {
+    display: inline-flex;
+    margin-left: 500px;
+}
+
+.skill-container img{
+    width: 90px;
+    height: auto;
+    background-color: aliceblue;
+    transition: all 0.5s ease-out;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.skill-container {
+    margin: 20px 20px;
+}
+
+.skill-container img:hover {
+    width: 100px;
+    height: auto;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.animated-text {
+    height: 70px;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.animated-text h3{
+    color:aqua;
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 70px;
+    letter-spacing: 1px;
+}
+.animated-text h3:nth-child(1) {
+    animation: text-move 3s infinite;
+} 
+
+
+@keyframes text-move {
+    0%{
+        margin-top: 0;
+    }
+
+    25%{
+        margin-top: -60px;
+    }
+
+    50%{
+        margin-top: -120px;
+    }
+
+    75%{
+        margin-top: -60px;
+    }
+
+    100%{
+        margin-top: 0;
+    }
+}
+
+#experience h2 {
+    text-align: center;
+}
+
+#wrap{
+    position:relative;
+    left:0; top:0;
+    width:150%;
+    height:100%;
+    display:flex;
+    align-items:stretch;
+    margin:10% 25%;
+  }
+  .hb {
+    position:relative;
+    width:25%;
+    z-index:1;
+    display:flex;
+    align-items:center;
+    z-index:2;
+    trasnform:scale(.97);
+  }
+  .c{
+    position:relative;
+    display:block;
+    max-width:90%;
+  }
+  .c img {
+    position:relative;
+    display:block;
+    width:100%;
+    height:auto;
+    z-index:2;
+  }
+  .txt {
+    position:absolute;
+    top:100%; left:10%;
+    width:80%;
+    opacity:0;
+    background-color: #000;
+    color: aqua;
+    padding:1em 0 0 1em;
+    border-left:1px solid;
+    z-index:1;
+    transform:scaleY(1) translateY(-50px);
+    transition:transform .2s, opacity .5s;
+  }
+  h1 {
+    font-size:1.2em;
+    font-weight:700;
+    text-transform:uppercase;
+  }
+  .hb:hover .txt {
+    opacity:1;
+    transform:scaleY(1) translateY(0);
+  }
+  .fullBg {
+    position:fixed;
+    top:0;
+    left:0;
+    opacity:0;
+    transition:transform .5s, opacity .5s;
+    transform:scale(1);
+    z-index: -1;
+  }
+  .fullBg img {
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:center;
+    opacity:.5;
+  }
+  .hb:hover + .fullBg {opacity:1;transform:scale(1.02);}
+  .credits {
+    position:fixed;
+    bottom:0;right:0;
+    padding:1.5em;
+    font-size:.8em;
+    text-align:right;
+    font-style:italic;
+    opacity:.8;
+    transition:opacity .2;
+    z-index:3;
+  }
+  .credits:hover {
+    text-decoration:underline;
+    opacity:1;
+  }
+
+footer span a img {
+    width: 40px;
+    height: auto;
+    background-color: aliceblue;
+    border-radius: 30%;
+    margin-left: 5px;
+    transition: all 0.5s ease-in;
+}
+
+footer span a img:hover {
+    width: 50px;
+    height: auto;
+    box-shadow: 5px 5px 5px azure;
+}
+
+.footer {
+    text-align: center;
+}
